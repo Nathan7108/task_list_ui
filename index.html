@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="static/styles.css"> <!-- Correct path -->
+</head>
+<body>
+    <h1>Task Management</h1>
+    <form id="create-task-form">
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" required>
+        <label for="task-description">Description:</label>
+        <input type="text" id="task-description">
+        <label for="task-priority">Priority (1-5):</label>
+        <input type="number" id="task-priority" min="1" max="5" required>
+        <label for="task-list-id">Task List ID:</label>
+        <input type="number" id="task-list-id" required>
+        <button type="submit">Create Task</button>
+    </form>
+    <h2>Task Lists</h2>
+    <ul id="task-lists"></ul>
+    <script src="static/scripts.js"></script> <!-- Correct path -->
+</body>
+</html>
